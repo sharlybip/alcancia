@@ -14,16 +14,25 @@
         <section id="display"><span>$ 0 </span></section>
         <section id="editor">
             <div id="input-container">
-                <input type="text" id="title">
-                <input type="number" id="cost">
+                <div class="selbut">
+                    <h2>Descripcion</h2>
+                    <input type="text" id="title">
+                </div>
+                <div class="selbut">
+                    <h2>Cantidad</h2>
+                    <input type="number" id="cost">
+                </div>
+                <div class="selbut">
+                    <select name="" id="currency">
+                        <option value="MXN">MXN</option>
+                        <option value="USD">USD</option>
+                    </select>
+                    <button id="bAdd">Agregar</button>
 
-                <select name="" id="currency">
-                    <option value="MXN">MXN</option>
-                    <option value="USD">USD</option>
-                </select>
-                <button id="bAdd">Agregar</button>
+                </div>
             </div>
         </section>
+        <h2>Movimientos</h2>
         <section id="items">
             
 

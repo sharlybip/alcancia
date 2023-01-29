@@ -1,6 +1,7 @@
 :root {
     --border: solid 1px #ccc;
     font-family: sans-serif;
+    color: rgb(80, 78, 78);
 }
 
 * {
@@ -10,6 +11,7 @@
 }
 body {
     background-color: rgb(218, 210, 200);
+    padding: 10px;
 }
 header {
     background-color: rgb(194, 154, 10);
@@ -39,12 +41,13 @@ main {
     align-items: center;
 }
 #editor {
-    
+    margin-block-end: 20px;    
 
 }
 #input-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     width: 100%;
 }
@@ -53,21 +56,33 @@ main {
     border-radius: 20px;
     font-size: 2em;
     margin-inline-end: 10px;
+    margin-block-start: 20px;
+    margin-block-end: 20px;
     color:rgb(173, 169, 169);
     border: gray;
     padding: 10px;
     outline: solid 3px rgb(154, 150, 150);
+    margin-inline-start: 20px;
     
     
 }
 #cost {
     width: 300px;
 }
+.selbut {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 #currency {
     margin-inline-end: 10px;
     border-radius: 10px;
     border: rgb(255, 255, 255);
     font-weight: bold;
+    width: 100px;
+    height: 50px;
+    font-size: 2em;
 }
 #bAdd {
     display: inline-block;
@@ -101,4 +116,13 @@ main {
     border: none;
     color:rgb(116, 90, 4);
     font-size: 1.2em;
+}
+
+@media (max-width: 600px) {
+    #cost, #title{
+        width: 80%;
+    }
+    #items, .item {
+        width: 90%;
+    }
 }
